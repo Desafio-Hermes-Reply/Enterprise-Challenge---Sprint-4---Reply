@@ -1,4 +1,4 @@
-# FIAP - Challenge Reply: MVP de Pipeline de Dados para Indústria 4.0
+# Enterprise Challenge - Sprint 4 - Reply
 
 <p align="center">
   <a href="https://www.fiap.com.br/">
