@@ -12,12 +12,13 @@ st.set_page_config(page_title="Dashboard de Sensores e Modelo", layout="wide")
 # Carregar dados (vários caminhos possíveis)
 # --------------------------
 candidates = [
-    "data/dataset_teste.csv",
-    "data/sample_adjusted.csv",
-    "data/sample.csv",
-    "dashboard/data/dataset_teste.csv",
-    "dashboard/data/sample_adjusted.csv",
-    "dashboard/data/sample.csv",
+    #"data/dataset_teste.csv",
+    #"data/sample_adjusted.csv",
+    #"data/sample.csv",
+    #"dashboard/data/dataset_teste.csv",
+    #"dashboard/data/sample_adjusted.csv",
+    #"dashboard/data/sample.csv",
+    'ingest/sample_data.csv'
 ]
 df = None
 used_path = None
@@ -37,7 +38,7 @@ if df is None:
 
 # tenta parsear timestamp
 if "timestamp" in df.columns:
-    df["timestamp"] = pd.to_datetime(df["timestamp"])
+    df["timestamp"] = pd.to_datetime(df["timestamp"]).dt.tz_localize(None)
 else:
     st.error("Arquivo carregado não contém a coluna 'timestamp'.")
     st.stop()
