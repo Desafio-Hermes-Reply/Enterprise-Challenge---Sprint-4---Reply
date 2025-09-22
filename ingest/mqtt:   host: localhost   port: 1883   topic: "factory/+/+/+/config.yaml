@@ -1,0 +1,7 @@
+mqtt:
+  host: localhost
+  port: 1883
+  topic: "factory/+/+/+/telemetry/v1"
+
+db:
+  dsn: "dbname=iot user=postgres password=postgres host=localhost port=5432"
