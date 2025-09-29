@@ -168,6 +168,33 @@ fig.update_layout(legend_title_text="variable", margin=dict(t=60, b=40, l=60, r=
 st.plotly_chart(fig, use_container_width=True)
 
 # --------------------------
+# Gráfico complementar
+# --------------------------
+
+st.markdown("---")
+st.subheader(" Escolha o Tipo de Visualização")
+
+chart_type = st.radio("Tipo de gráfico", ["Interativo (Plotly)", "Estático (Matplotlib)"])
+
+if chart_type == "Interativo (Plotly)":
+    fig2 = px.line(df_filtered, x="timestamp", y=sensor_col, title="Série Temporal - Interativo")
+    fig2.add_hline(y=threshold, line_dash="dash", line_color="red", annotation_text=f"Threshold = {threshold:.2f}")
+    st.plotly_chart(fig2, use_container_width=True)
+
+else:
+    import matplotlib.pyplot as plt
+    fig, ax = plt.subplots(figsize=(12, 4))
+    ax.plot(df_filtered["timestamp"], df_filtered[sensor_col], label="Raw", linewidth=0.8)
+    ax.plot(df_filtered["timestamp"], df_filtered[sensor_col].rolling(window).mean(), label=f"Rolling Mean ({window})")
+    ax.axhline(threshold, color='r', linestyle='--', label=f'Threshold = {threshold:.2f}')
+    ax.set_xlabel("Timestamp")
+    ax.set_ylabel("Valor")
+    ax.set_title("Sensor - Série Temporal (Estático)")
+    ax.legend()
+    st.pyplot(fig)
+
+
+# --------------------------
 # Widget de alerta visual + log
 # --------------------------
 mask_alert = df_filtered[sensor_col] > threshold
