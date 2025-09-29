@@ -123,6 +123,16 @@ streamlit run app.py
 ```
 Acesse o endereço local informado no terminal para visualizar os KPIs e o sistema de alertas.
 
+## Gráfico da série temporal do sensor
+
+Para gerar o gráfico estático da série temporal (linhas bruta, média móvel e threshold):
+
+```
+python ingest/plot_timeseries.py
+```
+o resultado sera salvo em:
+[grafico timeseries](docs\screenshots\sensor_timeseries.png)
+
 ---
 
 ## 🎬 Vídeo Demonstrativo
