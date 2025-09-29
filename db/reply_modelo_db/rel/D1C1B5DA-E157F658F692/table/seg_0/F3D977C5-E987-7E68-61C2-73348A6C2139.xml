@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F3D977C5-E987-7E68-61C2-73348A6C2139" name="parametros_maquinas_sensores">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>3FA5B3C0-0F0A-1479-46C1-5282581B8464</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_maquina" id="0B0ED49E-FB7D-475F-2BC5-01383A7DF78F">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>580B73FD-ABD4-7A33-A16F-CB5C9C6F1422</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E601DE6E-15BA-954E-1259-987C3C8F2F70" referredColumn="C23D82C5-A731-86FF-7D2E-90BE5FD09521"/>
+</associations>
+</Column>
+<Column name="id_parametros" id="A25925B3-B964-EF48-CF13-55D76380DA7F">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>538A9AB2-40A8-CAA2-B635-A2D07435E2D4</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="455CD4DB-F5EE-FF82-FFAA-AE13257F51D0" referredColumn="E60980A7-B939-3579-D301-835944613C6F"/>
+</associations>
+</Column>
+<Column name="valor_maximo" id="ED084D79-30D6-F20D-433F-D6CCA117B9B5">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>39830AC1-DB74-5961-DEEB-44D451B0E4EC</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_minimo" id="9751EB8F-C131-7CC4-23AC-A3A23666A202">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>77538562-4747-9C7C-7F59-E6E530597101</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E328BA0E-48AE-C10F-5A27-723CC78A64E8" name="PK_parametros_maquinas_sens">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>FD33B7F5-557F-9CA2-790E-0A922809E3A4</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B0ED49E-FB7D-475F-2BC5-01383A7DF78F"/>
+<colUsage columnID="A25925B3-B964-EF48-CF13-55D76380DA7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2F89189-5FC0-239C-26B0-2808F13296F9" name="FK_parametros_maq_sens_m">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>8BA64FA3-C378-38D9-7370-0DE6EAAAAB19</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B0ED49E-FB7D-475F-2BC5-01383A7DF78F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97DECF13-0C2C-A33A-C9EF-557F7BA2BE2D" name="FK_parametros_maq_sens_p">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>EDCBCAF1-A547-8C3F-1DF7-9757B5DEFA6D</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A25925B3-B964-EF48-CF13-55D76380DA7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="377EBB06-D51A-275F-E3D6-70ED3E8BA7F7" containerWithKeyObject="897FC339-CED4-519B-4BDE-F639B2164EA2" localFKIndex="99E13E9B-AD6C-4FFC-8251-66DFFF80F6B7" name="FK_leituras_tipos_param">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 21:02:37 UTC</createdTime>
+<generatorID>1E7935F3-652E-1C6A-BA01-B2FE22DD4B58</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<referredTableLongName>tipos_parametros</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8109CA4F-4EAF-34D4-BF21-1928E4A1D5ED</referredTableID>
+<keyObject>FDF9DCDA-DF8B-CA63-28B2-0E260E748F7D</keyObject>
+<referredKeyID>FDF9DCDA-DF8B-CA63-28B2-0E260E748F7D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipos_parametros</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

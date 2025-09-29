@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E78CABB7-0854-2AD1-2DD0-611290CC2E6D" name="sensores">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>1A696007-FC6B-C610-E498-97FE0584E6F7</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sensor" id="857EEB4D-4289-DDE2-83DE-E0EF1FA4139D">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>1CFD2205-1C7F-C129-4C21-263391D7AB0E</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_maquina" id="A777EDBC-AE02-50D5-D4AF-A9DA033844AD">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:48:35 UTC</createdTime>
+<generatorID>F16C6170-6A0C-1704-B18A-F72BDA08612B</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19F6A3C7-DFC6-1EE3-EC9E-3ABCCB28B28B" referredColumn="D86628F0-9C58-2D7F-792E-E9B4FA677BF0"/>
+</associations>
+</Column>
+<Column name="nome_sensor" id="1EF97521-16D0-CAC0-59E7-050289221B1A">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>7F1A2DF1-EF08-2AAC-352B-CBABE03A4A53</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ativo" id="B6977D95-3D1F-8A05-7336-E6F412884A3C">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>B0BACA6D-965A-A901-A598-E39FBC4060DC</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EDC3329-3E62-3DA4-E265-5D7B8C163A74" name="PK_sensores">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>F971EC73-6685-C8DA-4FE8-73EDE5CD8227</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="857EEB4D-4289-DDE2-83DE-E0EF1FA4139D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B236FFFC-38A2-A57B-C06A-6D68B45A0F62" name="FK_sensores_maquinas">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:48:35 UTC</createdTime>
+<generatorID>F1E636EE-A6FD-F002-AEB9-57B09F4B8027</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A777EDBC-AE02-50D5-D4AF-A9DA033844AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6F5FA6B-CDA3-08D9-FF34-235933C06DCF" name="maquinas">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>74B007D0-AD4D-91F1-83BE-2EDD2F9ABE77</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_maquina" id="D86628F0-9C58-2D7F-792E-E9B4FA677BF0">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>6A5AFE4E-CFC8-51D0-E683-C7145463664E</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="5EC7298B-C3DF-FD3B-DC1B-922B13B09DEA">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>15CCABE7-856F-7E6F-C959-C976CE6DB42D</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_serie" id="C416018A-AFD0-2766-7F47-F0E063AA9A76">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<comment><![CDATA[Número de série do fabricante]]></comment>
+<generatorID>0110C753-33D3-F6BC-75A4-4C2943DC5502</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modelo" id="93AF8B6A-D9B9-D96F-8F47-87922AD06EDE">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>FE90E3B1-8DCD-3DE7-A282-3369D8D073D5</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fabricante" id="CDC4F831-FDE3-F8E7-E5D8-5C7E30C63AAE">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>E5D0F477-8EA1-088F-6259-C721FC2BA4A3</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="localizacao" id="DDA1A88D-CA76-403C-8D36-C5944FE72C52">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>627A3565-C83B-33F8-AEDC-416807378A73</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_instalacao" id="44C6ECCF-9C86-820A-D927-BEEAF2DB94F0">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>05A7D7A9-374B-BE32-3391-3297AD89C727</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="F054475B-E5BE-644A-D24A-E42B6FD2CB76">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<comment><![CDATA[Estado atual da máquina. Ex: "Operando", "Parada", "Em Manutenção", "Alerta".]]></comment>
+<generatorID>DA12FBFE-4AD0-AB79-19DD-591FC4C795E8</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FA9E25D6-6724-5E49-67A2-7BBFDD475E2A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ultima_manutencao" id="69EE7DDF-726E-4ACC-1068-6690C7F1B375">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>A508326B-DBFB-F9C8-2352-D036778FF966</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proxima_manutencao" id="8D43B9C8-3D33-0A1C-14CB-A02A754ACE8C">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>35B27681-E988-1FF4-3275-203B5AA512D5</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8FCA37E-418F-F5B0-85BE-2C438E63DF7A" name="PK_maquinas">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>83A72C22-B24A-4D3B-8A19-F429D193C288</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D86628F0-9C58-2D7F-792E-E9B4FA677BF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE7113CB-1D18-19D1-D08D-312398C2D3A6" name="UN_maquinas_nmr_serie">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 21:57:20 UTC</createdTime>
+<comment><![CDATA[O número de série de cada máquina deve ser único]]></comment>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C416018A-AFD0-2766-7F47-F0E063AA9A76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_maquinas_status" directorySegmentName="seg_0" id="40E9AAD3-4FB8-CD12-3135-E678DFF10823">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-29 01:21:06 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<rule><![CDATA[status IN ('Em operacao', 'Em manutencao', 'Fora de operacao')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_maquinas_manutencao" directorySegmentName="seg_0" id="ABBA0914-480E-D410-D751-30F416D82B7D">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-29 01:26:43 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<rule><![CDATA[ultima_manutencao < proxima_manutencao OR (ultima_manutencao IS NULL AND proxima_manutencao IS NOT NULL) OR (ultima_manutencao IS NULL AND proxima_manutencao IS NULL)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

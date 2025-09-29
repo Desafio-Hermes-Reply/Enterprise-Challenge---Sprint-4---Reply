@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="41575B54-60D8-5478-F6E4-8324F00D6947" containerWithKeyObject="42AA46A8-02DF-FFC8-13E9-30A063AAE6BD" localFKIndex="41254433-EC26-E1F4-C8C2-BDA58790F98B" name="FK_ocorrencias_leit_sens">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>37C54549-47E2-A906-A4E3-4C93EB2E2E94</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<referredTableLongName>leituras_sensores</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ADEBB967-B57A-66B7-351B-11E527AB0877</referredTableID>
+<keyObject>41010F68-2BDC-B8B5-3DDB-80FAC9111365</keyObject>
+<referredKeyID>41010F68-2BDC-B8B5-3DDB-80FAC9111365</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_leitura_sensor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

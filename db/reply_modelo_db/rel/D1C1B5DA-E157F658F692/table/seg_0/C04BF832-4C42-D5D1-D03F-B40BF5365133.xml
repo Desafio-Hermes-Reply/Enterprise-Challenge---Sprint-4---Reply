@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C04BF832-4C42-D5D1-D03F-B40BF5365133" name="parametros">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>EA3EA93A-8905-024A-44B9-0D88E71D11E2</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_parametros" id="E60980A7-B939-3579-D301-835944613C6F">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>F5A13228-12B4-7AE8-6D7C-8EC9412FFF73</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao_tipo" id="F319E0A8-8F64-3BA3-77E9-8FB2C95C6047">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>60C13559-F5CD-27C2-3E91-12CED0EDF7D1</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E0D0110-FA9B-85AC-688F-1A32E3D2FE09" name="PK_parametros">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>2C0E2F2E-B1DB-6FEF-8143-3333399FE7DB</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E60980A7-B939-3579-D301-835944613C6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B95C179-968B-0B3E-43AA-2B628E8E3B45" name="UN_parametros_descricao_tipo">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:43:46 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F319E0A8-8F64-3BA3-77E9-8FB2C95C6047"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

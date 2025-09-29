@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AD5150CE-A8FA-356E-5E44-20985B9D9C85" containerWithKeyObject="42AA46A8-02DF-FFC8-13E9-30A063AAE6BD" localFKIndex="11EF920B-2239-E561-C782-B63FE2B856BF" name="FK_ocorrencias_param_maq_sens">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:32:38 UTC</createdTime>
+<generatorID>B6297A45-4950-9C10-8D90-A3EA7471FC6B</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<referredTableLongName>parametros_maquinas_sensores</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F3D977C5-E987-7E68-61C2-73348A6C2139</referredTableID>
+<keyObject>E328BA0E-48AE-C10F-5A27-723CC78A64E8</keyObject>
+<referredKeyID>E328BA0E-48AE-C10F-5A27-723CC78A64E8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_maquina,id_parametros</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

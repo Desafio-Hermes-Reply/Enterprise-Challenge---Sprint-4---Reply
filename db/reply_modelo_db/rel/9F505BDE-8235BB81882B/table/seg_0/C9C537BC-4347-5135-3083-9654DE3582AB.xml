@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9C537BC-4347-5135-3083-9654DE3582AB" name="configuracao_parametros">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Armazena os limites de valor para um tipo de parâmetro em uma máquina específica]]></commentInRDBMS>
+<generatorID>3FA5B3C0-0F0A-1479-46C1-5282581B8464</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_maquina" id="591520FE-9305-8A58-A25D-86DD15936666">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>580B73FD-ABD4-7A33-A16F-CB5C9C6F1422</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAFC7CB3-D92B-55E5-D685-76DAB1780EA6" referredColumn="D86628F0-9C58-2D7F-792E-E9B4FA677BF0"/>
+</associations>
+</Column>
+<Column name="id_tipos_parametros" id="65A3B380-EFC9-A47E-95CD-C6686954C8E5">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>ED0754A3-DCD4-F1F0-4B56-087628FAB86F</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43045C5C-59BD-8CE2-6BFE-7EE87B1C388F" referredColumn="E9E8B75E-14B0-441C-4270-E1CE4340ECCA"/>
+</associations>
+</Column>
+<Column name="valor_maximo" id="4EA3BAAE-A7B6-0F84-AF27-8862ED6FDE33">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>39830AC1-DB74-5961-DEEB-44D451B0E4EC</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_minimo" id="F261182D-BB6C-4580-378A-A614E9FE9C53">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>77538562-4747-9C7C-7F59-E6E530597101</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23124401-5645-D114-7781-39E214A5D291" name="PK_config_parametros">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>FD33B7F5-557F-9CA2-790E-0A922809E3A4</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="591520FE-9305-8A58-A25D-86DD15936666"/>
+<colUsage columnID="65A3B380-EFC9-A47E-95CD-C6686954C8E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30D8F5C0-7D79-24E1-B79B-DF37A63D7CAA" name="FK_config_parametros">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>8BA64FA3-C378-38D9-7370-0DE6EAAAAB19</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="591520FE-9305-8A58-A25D-86DD15936666"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BD5064E-958D-5D28-17F8-8E0077DD96EE" name="FK_config_param_tipos">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 20:32:12 UTC</createdTime>
+<generatorID>EDCBCAF1-A547-8C3F-1DF7-9757B5DEFA6D</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65A3B380-EFC9-A47E-95CD-C6686954C8E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

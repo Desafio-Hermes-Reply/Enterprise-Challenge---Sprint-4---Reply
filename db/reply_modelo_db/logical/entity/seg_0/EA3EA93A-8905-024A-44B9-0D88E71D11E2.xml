@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EA3EA93A-8905-024A-44B9-0D88E71D11E2" name="tipos_parametros">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 03:46:58 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tipos_parametros" id="F5A13228-12B4-7AE8-6D7C-8EC9412FFF73">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 03:47:10 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao_tipo" id="60C13559-F5CD-27C2-3E91-12CED0EDF7D1">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 03:47:51 UTC</createdTime>
+<commentInRDBMS><![CDATA["temperatura", "vibracao"," corrente", "velocidade", "posicao", "pressao", "nivel", "qualidade_ar", "umidade", "tensao", "fumaca"
+]]></commentInRDBMS>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2C0E2F2E-B1DB-6FEF-8143-3333399FE7DB" name="parametros PK">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 03:50:25 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F5A13228-12B4-7AE8-6D7C-8EC9412FFF73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

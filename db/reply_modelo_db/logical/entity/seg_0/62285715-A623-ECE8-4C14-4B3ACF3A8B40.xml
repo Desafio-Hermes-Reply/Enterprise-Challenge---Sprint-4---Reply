@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="62285715-A623-ECE8-4C14-4B3ACF3A8B40" name="ocorrencias">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:03:33 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_ocorrencia" id="2F4F3F95-DF1E-7D11-7E19-D78D451A7CFE">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:03:45 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_leitura_sensor" id="79B23481-152E-8579-B974-FE3F11C4FEAD">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:09:21 UTC</createdTime>
+<generatorID>37C54549-47E2-A906-A4E3-4C93EB2E2E94</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<referedAttribute>EE6279FA-43CC-BB9C-807E-F3E925D774A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nmr_ocorrencia" id="6111066B-B7F1-78D8-090C-EB99682F52A1">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:04:06 UTC</createdTime>
+<comment><![CDATA[Registra o número da ocorrência. Poderá ser visualizado pelo usuário]]></comment>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_anomalia" id="C272B49A-ADE2-3D7A-00EE-B754A8172FA2">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:43:03 UTC</createdTime>
+<comment><![CDATA[O que aconteceu (ex: 'Temperatura Alta', 'Vibração', 'Falha Sensor').]]></comment>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="severidade" id="6FA38A63-53EE-0709-A4A0-1E9565A9693B">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:45:51 UTC</createdTime>
+<comment><![CDATA[Quão grave é ('Crítica', 'Urgente', 'Aviso')]]></comment>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="AE4FA9BD-E015-C78F-BD04-84FB2BB930FC">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:47:15 UTC</createdTime>
+<comment><![CDATA[Uma breve descrição do evento.]]></comment>
+<commentInRDBMS><![CDATA[descrição da ocorrencia que foi registrada]]></commentInRDBMS>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_hora" id="C44C6896-B715-C92F-3F5D-1E5007AC755E">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-28 22:24:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registra a data e hora que a ocorrência foi registrada]]></commentInRDBMS>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_ocorrencia" id="C7348EE8-2DF5-6568-27A6-8E26D2DE5614">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:47:35 UTC</createdTime>
+<comment><![CDATA[O status atual ('Aberta', 'Em Análise', 'Resolvida').]]></comment>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="limite_maximo_violado" id="3B178E75-2196-4198-0F20-4645048F5996">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-29 01:10:34 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,10,4</ownDataTypeParameters>
+</Attribute>
+<Attribute name="limite_minimo_violado" id="01121CBC-386C-C94F-281F-4E05AE858EC6">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-09-29 01:10:44 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,10,4</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="60CE6463-7A16-4278-F854-D30E28AD69CC" name="ocorrencias PK">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:39:07 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2F4F3F95-DF1E-7D11-7E19-D78D451A7CFE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

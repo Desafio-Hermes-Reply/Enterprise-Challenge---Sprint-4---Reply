@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3FA5B3C0-0F0A-1479-46C1-5282581B8464" name="configuracao_parametros">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 03:49:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Armazena os limites de valor para um tipo de parâmetro em uma máquina específica]]></commentInRDBMS>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<synonym>parametros_maquinas_sensores</synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_maquina" id="580B73FD-ABD4-7A33-A16F-CB5C9C6F1422">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 03:50:17 UTC</createdTime>
+<generatorID>8BA64FA3-C378-38D9-7370-0DE6EAAAAB19</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<referedAttribute>6A5AFE4E-CFC8-51D0-E683-C7145463664E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tipos_parametros" id="ED0754A3-DCD4-F1F0-4B56-087628FAB86F">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-25 00:35:29 UTC</createdTime>
+<generatorID>EDCBCAF1-A547-8C3F-1DF7-9757B5DEFA6D</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<referedAttribute>F5A13228-12B4-7AE8-6D7C-8EC9412FFF73</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_maximo" id="39830AC1-DB74-5961-DEEB-44D451B0E4EC">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:38:16 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_minimo" id="77538562-4747-9C7C-7F59-E6E530597101">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:38:16 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FD33B7F5-557F-9CA2-790E-0A922809E3A4" name="parametros_maquinas_sensores PK">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-24 23:18:38 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9F505BDE-A476-8F81-A4B0-8235BB81882B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>580B73FD-ABD4-7A33-A16F-CB5C9C6F1422</attributeRef>
+<attributeRef>ED0754A3-DCD4-F1F0-4B56-087628FAB86F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
