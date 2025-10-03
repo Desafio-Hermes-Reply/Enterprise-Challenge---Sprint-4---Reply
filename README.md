@@ -60,11 +60,19 @@ A arquitetura do sistema foi desenhada para ser modular e escalável, representa
 <img src="docs\screenshots\Captura de Tela 2025-10-03 às 18.58.35.png" width="500">
 
 ---
+
 ## prints dos diagramas lógico e racional
 <img src="db\reply_modelo_db\src\logical_model_db_sprint4.png" width="500">
 <img src="db\reply_modelo_db\src\relational_model_db_sprint4.png" width="500">
+
 ---
 
+## Visualização do Dashboard
+
+O dashboard completo está disponível no formato PDF.
+[🔗 Clique aqui para visualizar o Dashboard completo (PDF)](docs\screenshots\Dashboard de Sensores.pdf)
+
+---
 ## 📁 Estrutura do Repositório
 
 O projeto está organizado na seguinte estrutura de pastas, conforme os requisitos da entrega:
