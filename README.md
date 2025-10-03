@@ -66,14 +66,116 @@ A arquitetura do sistema foi desenhada para ser modular e escalável, representa
 O projeto está organizado na seguinte estrutura de pastas, conforme os requisitos da entrega:
 
 ```
-.
-├── docs/
-│   └── arquitetura/      # Diagrama da arquitetura da solução
-├── ingest/               # Código e dados da simulação do sensor ESP32
-├── db/                   # Scripts SQL para criação e carga do banco de dados
-├── ml/                   # Notebook com o treinamento e avaliação do modelo de ML
-├── dashboard/            # Aplicação do dashboard com KPIs e alertas
-└── README.md             # Este arquivo
+Enterprise-Challenge---Sprint-4---Reply/
+│── .env                        # Variáveis de ambiente
+│── .gitignore                  # Arquivos/pastas ignorados no Git
+│── .gitkeep                    # Placeholder para manter pastas vazias
+│── requirements.txt            # Dependências Python
+│── README.md                   # Documentação principal
+│── app.py                      # Script principal em Python
+│── dl_settings.xml             # Configurações do Data Layer
+│── script_db_sprint4.ddl       # Script de criação do banco de dados
+│── reply_modelo_db.dmd         # Metadados do modelo de banco
+│── logical_model_db_sprint4.png# Diagrama lógico do BD
+│── relational_model_db_sprint4.png # Diagrama relacional do BD
+│── logo-fiap.png               # Logo utilizada no projeto
+│
+├── assets/                     # Recursos estáticos
+│   └── logo-fiap.png
+│
+├── dashboard/                  # Dashboards e visualizações
+│   └── ...
+│
+├── data/                       # Dados do projeto
+│   ├── dataset_teste.csv
+│   ├── raw/                    # Dados brutos
+│   └── processed/              # Dados tratados
+│
+├── db/                         # Scripts e schemas de banco
+│   └── ...
+│
+├── reply_modelo_db/            # Estrutura de metadados e modelos de BD
+│   ├── businessinfo/
+│   ├── datatypes/
+│   ├── domains/
+│   ├── logical/                # Entidades, relações e subviews
+│   ├── mapping/                # Mapeamentos e versões de entidades
+│   ├── pm/                     # Process models
+│   ├── rdbms/                  # Configs de banco relacional
+│   └── rel/                    # Chaves estrangeiras e tabelas
+│
+├── mapping/                    # Mapeamentos auxiliares
+│   └── ...
+│
+├── pdm/                        # Physical Data Model
+│   └── ...
+│
+├── rdbms/                      # Definições específicas de SGBD
+│   └── ...
+│
+├── rel/                        # Relacionamentos adicionais
+│   └── ...
+│
+├── src/                        # Código-fonte principal
+│   ├── _init_.py
+│   ├── preprocessing/          # Pré-processamento de dados
+│   ├── models/                 # Modelos de ML/IA
+│   ├── utils/                  # Funções utilitárias
+│   └── visualization/          # Visualizações e gráficos
+│
+├── tests/                      # Testes unitários
+│   └── test_app.py
+│
+├── docs/                       # Documentação técnica
+│   └── arquitetura.md
+│
+├── document/                   # Documentos adicionais
+│   └── ...
+│
+├── fireguard_api/              # Projeto Django (API Backend)
+│   ├── .venv/                  # Ambiente virtual Python
+│   ├── db.sqlite3              # Banco local SQLite
+│   ├── manage.py               # Utilitário Django
+│   ├── fireguard/              # Configuração principal Django
+│   │   ├── settings.py         # Configurações globais
+│   │   ├── urls.py             # Rotas globais
+│   │   ├── wsgi.py / asgi.py   # Configuração servidor
+│   │   └── _init_.py
+│   └── sensors/                # App Django para sensores
+│       ├── models.py           # Modelos do banco
+│       ├── views.py            # Views/API REST
+│       ├── serializers.py      # Serializadores (DRF)
+│       ├── urls.py             # Rotas da app
+│       ├── tests.py            # Testes unitários
+│       ├── admin.py            # Configuração no Django Admin
+│       └── apps.py             # Registro da app
+│
+└── fireguard-sensor/           # Projeto IoT (PlatformIO/Wokwi + ML)
+    │── .pio/                   # Arquivos gerados pelo PlatformIO
+    │── .vscode/                # Configurações do VSCode
+    │── src/                    # Código C++/Arduino do microcontrolador
+    │── diagram.json            # Diagrama de hardware (Wokwi)
+    │── platformio.ini          # Configuração PlatformIO
+    │── wokwi.toml              # Configuração simulação Wokwi
+    │
+    ├── ingest/                 # Ingestão de dados de sensores
+    │   ├── config_mqtt/        # Configuração do MQTT
+    │   ├── ESP32/              # Scripts para ESP32
+    │   ├── consumer.py         # Consumidor de mensagens MQTT
+    │   ├── plot_series.py      # Plotagem de séries temporais
+    │   ├── sample_data.csv     # Dados de amostra
+    │   ├── v1.json             # Configuração de versão
+    │   └── wokwi_monitor_serial.png # Monitor serial da simulação
+    │
+    ├── ml/                     # Modelos de ML embarcados
+    │   ├── models_preditivo/
+    │   │   ├── modelo_falha_decision_tree.pkl
+    │   │   ├── modelo_falha_knn.pkl
+    │   │   └── scaler_falha.pkl
+    │   ├── dataset_tratado.csv
+    │   └── modelo_preditivo.ipynb
+    │
+    └── src/                    # (Duplicata) Código adicional
 ```
 
 ---
