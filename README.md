@@ -47,7 +47,7 @@ O objetivo é transformar os dados brutos gerados por sensores em insights acion
 
 A arquitetura do sistema foi desenhada para ser modular e escalável, representando o fluxo completo de dados desde a origem até a camada de apresentação.
 
-![Arquitetura da Solução](docs/reply_arquitetura_drawio.png)
+![Arquitetura da Solução](docs/arquitetura/reply_arquitetura_drawio.png)
 
 *O arquivo editável do diagrama (`.drawio`) está disponível no diretório `/docs/arquitetura/`.*
 
