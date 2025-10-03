@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://www.fiap.com.br/">
-    <img src="https://i.imgur.com/2jMLsTa.png" alt="FIAP" width="300">
+    <img src="assets\logo-fiap.png" alt="FIAP" width="300">
   </a>
 </p>
 
@@ -59,6 +59,10 @@ A arquitetura do sistema foi desenhada para ser modular e escalável, representa
 <img src="docs\screenshots\Captura de Tela 2025-10-03 às 18.58.25.png" width="500">
 <img src="docs\screenshots\Captura de Tela 2025-10-03 às 18.58.35.png" width="500">
 
+---
+## prints dos diagramas lógico e racional
+<img src="db\reply_modelo_db\src\logical_model_db_sprint4.png" width="500">
+<img src="db\reply_modelo_db\src\relational_model_db_sprint4.png" width="500">
 ---
 
 ## 📁 Estrutura do Repositório
