@@ -52,6 +52,14 @@ A arquitetura do sistema foi desenhada para ser modular e escalável, representa
 *O arquivo editável do diagrama (`.drawio`) está disponível no diretório `/docs/arquitetura/`.*
 
 ---
+## prints do sensor/monitor serial
+
+<img src="docs\screenshots\Captura de Tela 2025-10-03 às 18.57.52.png" width="500">
+<img src="docs\screenshots\Captura de Tela 2025-10-03 às 18.58.05.png" width="500">
+<img src="docs\screenshots\Captura de Tela 2025-10-03 às 18.58.25.png" width="500">
+<img src="docs\screenshots\Captura de Tela 2025-10-03 às 18.58.35.png" width="500">
+
+---
 
 ## 📁 Estrutura do Repositório
 
