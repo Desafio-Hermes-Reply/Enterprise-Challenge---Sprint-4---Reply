@@ -215,10 +215,10 @@ O modelo de dados foi projetado para monitorar máquinas industriais, capturando
 ## 🖼️ Imagem do Modelo
  
 ### Modelo Lógico
- <img width="952" height="652" alt="logical_model_db_sprint4" src="https://github.com/user-attachments/assets/501b41f0-6f9b-4dc6-af3c-43d528a29f34" />
+ <img width="500" alt="logical_model_db_sprint4" src="https://github.com/user-attachments/assets/501b41f0-6f9b-4dc6-af3c-43d528a29f34" />
  
 ### Modelo Relacional
- <img width="1407" height="821" alt="relational_model_db_sprint4" src="https://github.com/user-attachments/assets/1f2a86e6-8ed9-4a76-b05f-0a05805e3692" />
+ <img width="500" alt="relational_model_db_sprint4" src="https://github.com/user-attachments/assets/1f2a86e6-8ed9-4a76-b05f-0a05805e3692" />
 
 ---
 
