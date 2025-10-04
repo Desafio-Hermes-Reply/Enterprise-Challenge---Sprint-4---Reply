@@ -52,7 +52,7 @@ A arquitetura do sistema foi desenhada para ser modular e escalável, representa
 *O arquivo editável do diagrama (`.drawio`) está disponível no diretório `/docs/arquitetura/`.*
 
 ---
-## prints do sensor/monitor serial
+## Prints do sensor/monitor serial
 
 <img src="docs\screenshots\Captura de Tela 2025-10-03 às 18.57.52.png" width="500">
 <img src="docs\screenshots\Captura de Tela 2025-10-03 às 18.58.05.png" width="500">
@@ -61,16 +61,23 @@ A arquitetura do sistema foi desenhada para ser modular e escalável, representa
 
 ---
 
-## prints dos diagramas lógico e racional
+## Prints dos diagramas lógico e racional
 <img src="db\reply_modelo_db\src\logical_model_db_sprint4.png" width="500">
 <img src="db\reply_modelo_db\src\relational_model_db_sprint4.png" width="500">
 
 ---
 
-## Visualização do Dashboard
+## 📊 Visualização do Dashboard
 
-O dashboard completo está disponível no formato PDF.
-[🔗 Clique aqui para visualizar o Dashboard completo (PDF)](docs\screenshots\Dashboard de Sensores.pdf)
+<img width="500" alt="dashboard_1" src="https://github.com/user-attachments/assets/b8a7d4e7-ed9d-4a04-b8c2-982245c81839" /> </br>
+<img width="500" alt="dashboard_2" src="https://github.com/user-attachments/assets/67b665af-302a-412e-be43-99f2c72da94a" />
+
+Logs de Alerta </br>
+<img width="500" alt="dashboard_3_logs_alerta" src="https://github.com/user-attachments/assets/4514f648-f3e0-4a3b-8579-1287529605af" />
+
+
+A visualização completa do dashboard está disponível no formato PDF em: </br>
+**docs\screenshots\Dashboard de Sensores.pdf**
 
 ---
 ## 📁 Estrutura do Repositório
@@ -191,18 +198,28 @@ O projeto está organizado na seguinte estrutura de pastas, conforme os requisit
 # Machine Learning 🤖
  
 ### Problema escolhido
- 
 Em ambientes industriais, o monitoramento da temperatura é um fator crítico para garantir a segurança operacional, a qualidade do produto e a preservação dos equipamentos. Pequenas variações podem indicar falhas em sistemas de refrigeração, superaquecimento de motores, desgaste de componentes ou até riscos de incêndio. O modelo  foi treinado para prever falhas nas máquinas e auxiliar na manutenção preditiva.
+
+### Análise Exploratória de Dados
+<img width="1489" height="989" alt="analise_exploratoria" src="https://github.com/user-attachments/assets/a6ed7939-48b0-444b-92d8-94176a618bdf" />
+
+### Matriz de Correlação
+<img width="1098" height="1002" alt="matriz_correlacao" src="https://github.com/user-attachments/assets/d1ae720b-677c-4a62-807f-6a70d42ebd52" />
 
 ---
 
-## 🖼️ Imagem do Modelo do Banco de Dados
+## 🎲 Modelo do Banco de Dados
+
+O modelo de dados foi projetado para monitorar máquinas industriais, capturando leituras de sensores, gerenciando informações sobre as máquinas e registrando ocorrências e anomalias.
+
+## 🖼️ Imagem do Modelo
  
 ### Modelo Lógico
- 
+ <img width="952" height="652" alt="logical_model_db_sprint4" src="https://github.com/user-attachments/assets/501b41f0-6f9b-4dc6-af3c-43d528a29f34" />
  
 ### Modelo Relacional
- 
+ <img width="1407" height="821" alt="relational_model_db_sprint4" src="https://github.com/user-attachments/assets/1f2a86e6-8ed9-4a76-b05f-0a05805e3692" />
+
 ---
 
 ## 🚀 Como Executar o Pipeline Completo
@@ -216,8 +233,8 @@ Siga os passos abaixo para configurar e executar o projeto em um ambiente local.
 
 **1. Clone o Repositório:**
 ```bash
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-cd seu-repositorio
+git clone https://github.com/Desafio-Hermes-Reply/Enterprise-Challenge---Sprint-4---Reply.git
+cd Enterprise-Challenge---Sprint-4---Reply
 ```
 
 **2. Simulação e Coleta de Dados:**
