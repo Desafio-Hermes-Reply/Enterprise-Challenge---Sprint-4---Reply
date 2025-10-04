@@ -76,9 +76,6 @@ Logs de Alerta </br>
 <img width="500" alt="dashboard_3_logs_alerta" src="https://github.com/user-attachments/assets/4514f648-f3e0-4a3b-8579-1287529605af" />
 
 
-A visualização completa do dashboard está disponível no formato PDF em: </br>
-**docs\screenshots\Dashboard de Sensores.pdf**
-
 ---
 ## 📁 Estrutura do Repositório
 
@@ -281,7 +278,7 @@ o resultado sera salvo em:
 
 Uma demonstração completa do pipeline em funcionamento, desde a geração de dados até o alerta no dashboard, está disponível no link abaixo:
 
-**[➡️ Link para o seu vídeo de até 5 minutos no YouTube (não listado) aqui]**
+**[➡️ https://youtu.be/d6VOo5DAyzo]**
 
 ---
 
